@@ -6,3 +6,12 @@ step_lm <- stepAIC(house_full, direction="both")
 
 library(MASS)
 # stepAIC을 실행하기 전에 불러오는 라이브러리 정확히 무슨 목적의 라이브러리인지는 설명하지 않았지만 아마 이게 있어야 모델을 계산할수 있는듯 하다.
+
+model <- lm( Sepal.Length ~Sepal.Width + Petal.Length + Petal.Width , data=iris)
+summary(model)
+
+#lm R에서 선형 회귀 모델을 만들때 쓴다.
+#각각 종속변수, 독립변수(+로 이어버림) , 데이터다. 그렇군...
+
+# R은 인덱스가 1 부터 시작한다.
+# dplyr 패키지 (데이터 프레임을 다룬다. 편집할게 많아질수록 내장함수보다 편해짐 
