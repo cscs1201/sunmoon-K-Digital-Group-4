@@ -1,0 +1,8 @@
+summary(house_lm)
+# summray 는 통계치 구하는 함수
+step_lm <- stepAIC(house_full, direction="both")
+#stepAIC 는 ... 이게 정확히 뭐지.. 아무튼 direction 은 방향을 설정해준다. 아무래도 오른쪽 정렬 왼쪽 정렬 같은거 봐 주는 듯 하다.
+#가장 간소한 모델을 구하는 식인것 같다.
+
+library(MASS)
+# stepAIC을 실행하기 전에 불러오는 라이브러리 정확히 무슨 목적의 라이브러리인지는 설명하지 않았지만 아마 이게 있어야 모델을 계산할수 있는듯 하다.
